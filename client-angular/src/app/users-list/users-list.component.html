@@ -1,5 +1,17 @@
-<ul>
-    <li *ngFor="let user of users"> {{ user.name }}</li>
+<div class="container my-5 bg-dark text-white">
+    <div class="row p-3">
 
+        <ul class="list-unstyled col-4">
+            <li *ngFor="let user of users" class="p-2"> {{ user.name }}</li>
+        </ul>
 
-</ul>
+        <ul class="list-unstyled col-4">
+            <li *ngFor="let user of users" class="p-2"> {{ user.age }}</li>
+        </ul>
+
+        <ul class="list-unstyled col-4">
+            <li *ngFor="let user of users" class="p-2"> {{ user.company }}</li>
+        </ul>
+
+    </div>
+</div>
